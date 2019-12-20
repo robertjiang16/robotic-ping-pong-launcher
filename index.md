@@ -1,7 +1,3 @@
----
-order: 0
----
-
 # Home
 
 ### Welcome to the final project website for Group 6! Follow the links below to learn more about our project.
