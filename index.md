@@ -1,2 +1,3 @@
 # Hello world
-## Why won't this work oop
+## It worked YEET
+[a relative link](introduction.md)
