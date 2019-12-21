@@ -24,8 +24,12 @@ We modeled the trajectory of the ball using projectile motion equations that we 
 
 ## Measurements
 
-We first required 2 values to be able to rotate the base of the arm along the z-axis: the x- and y-axis distance of the container to the arm of the robot. We found these values by taking the tf_echo transforms of the base of the arm with respect to the AR tag on the container. This was used to calculate <img src="https://render.githubusercontent.com/render/math?math=$theta_{1}$">, the angle of the base joint. 
+We first required 2 values to be able to rotate the base of the arm along the z-axis: the x- and y-axis distance of the container to the arm of the robot. We found these values by taking the tf_echo transforms of the base of the arm with respect to the AR tag on the container. This was used to calculate <img src="https://render.githubusercontent.com/render/math?math=$\theta_{1}$">, the angle of the base joint. 
 
-Next, we had to calculate the angle for the launcher. As shown in the figure below, we had to measure 6 variables to be able to determine ideal values for the “pitch angle” of the shooter. We will refer to this angle as <img src="https://render.githubusercontent.com/render/math?math=$theta_{2}$"> and apply it to joint 5. 
+Next, we had to calculate the angle for the launcher. As shown in the figure below, we had to measure 6 variables to be able to determine ideal values for the “pitch angle” of the shooter. We will refer to this angle as <img src="https://render.githubusercontent.com/render/math?math=$\theta_{2}$"> and apply it to joint 5. 
 
 The x- and z-axis distances were calculated using tf_echo transforms. <img src="https://render.githubusercontent.com/render/math?math=$L$"> was calculated using the iOS measurement app and verified using a ruler. The initial velocity of the ball was calculated using a slow-motion video of the ball being shot with scale in the background for reference. We used this video to determine the distance traveled by the ball in many short time increments and averaged to get an estimated velocity. We adjusted this estimate by taking readings of the ball being shot at 45° and used the standard projectile motion equations to determine the velocity.
+
+## Calculations
+
+As seen in the figure below, <img src="https://render.githubusercontent.com/render/math?math=$\theta$"> is calculated as <img src="https://render.githubusercontent.com/render/math?math=$arctan(\frac{d_y}{d_x})$">. We then move the arm to an all-zero position and rotate the base joint by theta, setting it to be positive or negative based on the sign <img src="https://render.githubusercontent.com/render/math?math=$d_x$">. 
