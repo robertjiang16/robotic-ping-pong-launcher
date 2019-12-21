@@ -1,10 +1,5 @@
 # Conclusion
 
-## Navigation
-### [Discussion](#discussion)
-### [Difficulties in Implementation](#difficulties-in-implementation)
-### [Improvements](#improvements)
-
 ## Discussion
 Discuss your results. How well did your finished solution meet your design criteria?
 
