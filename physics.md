@@ -53,3 +53,15 @@ Finally, we applied <img src="https://render.githubusercontent.com/render/math?m
 
 Another small calculation that we implemented dealt with AR tag identification instability. The AR tag would often bounce around in Rviz, causing us to aim and shoot in the wrong direction. To fix this, we took 10 readings of our lookupTransform from the arm to the AR tag and took the median value to get rid of the noisy data. Initially, 10 readings were not enough to shield us from the noise, however, reducing the sampling rate of our loop fixed the problem as the AR tag spent more time in the correct location than the incorrect one. 
 
+## Future Improvements
+
+While our shooter did work correctly, we recognize that we can do even better and shoot the ball into even smaller containers consistently. Here are some ideas that we have for future work:
+
+1. Incorporate RL and compare deep learning-based models to the physics-based models. Extend this to testing for the point at which one becomes better than the other. 
+2. Incorporating air resistance and other factors in our physics equations. 
+3. Converting solutions for theta that aren’t in the first coordinate to acute angle solutions for <img src="https://render.githubusercontent.com/render/math?math=$\theta_{2}$">.
+4. Choosing a theta value returned by fsolve after taking into account the uncertainty of the solution.  
+5. Further developing our equations to be able to shoot from multiple positions in the arms reachable workspace. Initially, this would involve shooting from any point in a circle formed by a fully extended arm after applying <img src="https://render.githubusercontent.com/render/math?math=$\theta_{1}$"> in the YZ-plane. Next, we would remove the circle constraints. Finally, we should be able to shoot from any place in the workspace that has a feasible solution. 
+6. Identifying obstacles and calculating whether there is a feasible shot that can avoid the obstacle. This can be extended to bouncing the ball around the obstacle, however, this would be a very complex project which would require some sophisticated learning methods/modeling. Attempting to this using a modified version of our Newtonian approach would provide better insight into how difficult the problem actually is. 
+
+### [Return to Design](design.md)
