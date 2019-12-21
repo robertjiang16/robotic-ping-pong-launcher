@@ -6,6 +6,7 @@ How well did your project work? What tasks did it perform?
 ## Photos
 
 ## Video
-Illustrate with pictures and at least one video.
+
+To see our project in action, click on [this link](https://youtu.be/TibLswGP-6U).
 
 ### [Return to home](index.md)
