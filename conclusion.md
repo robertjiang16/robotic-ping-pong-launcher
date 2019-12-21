@@ -44,4 +44,6 @@ Furthermore, `[INSERT RL STUFF HERE]`
 
 ### Miscellaneous
 
+Some further improvements that can be made to our project involve its complexity and what different functions it can perform. One idea our team had for introducing complexity to our project was to have the robot be able to launch the ping pong ball at a moving target container using a Turtlebot. Programming the robot to launch a ping pong ball at a target container that is never in the same location at any point would increase it's ability to be applied to other real-world applications.
+
 ### [Return to home](index.md)
