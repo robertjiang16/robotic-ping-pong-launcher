@@ -32,6 +32,10 @@ One final adjustment that should be made to the launcher in more improved versio
 
 ### Camera
 
+Another important element incorporated into our project was the camera; for the implementation of the project, the Sawyer right arm camera was used to scan for and detect the AR tag attached to the target container. However, the functionality of the Sawyer right arm camera was severely limited throughout the implementation of our project; at distances greater than about 7 feet away, the camera would no longer be able to detect the AR tag, even when it is in the camera's range of vision. Using a better camera, such as a RealSense, would improve the functionality of the robot and allow it to launch the ping pong ball more accurately at farther distances.
+
+Additionally, our robot was hindered by its dependency on the AR tag attached to the target container; the container could only be located by the robot if the AR tag was directly visible to the camera. Finding a way to sense the target container without the AR tag (for example, using image segmentation and a better camera) would remove this dependency and allow this technology to be applied to a broader range of real-world applications.
+
 ### Physics
 
 ### Miscellaneous
