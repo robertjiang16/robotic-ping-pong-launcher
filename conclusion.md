@@ -1,7 +1,8 @@
 # Conclusion
 
 ## Discussion
-Discuss your results. How well did your finished solution meet your design criteria?
+
+Overall, our robot did meet most of the design criteria that we set out to achieve in this project. The robot was able to locate and sense the AR tag, as well as aim at the target container and adjust the angle to the ideal ping pong launch angle. There was a complication in the launch angle calculated when the target container was placed in a location below the z-coordinate of the base of the robot, but this can be solved with aome slight adjustments to the code. We would have liked to introduce more complexity into the design of the robot but did not receive the opportunity; some of these complexities include launching over an obstacle or launching from any location within the reachable workspace.
 
 ## Difficulties in Implementation
 
