@@ -12,6 +12,10 @@ Varun primarily worked on testing the Deep RL approach and modeling the physics 
 
 ## Robert Jiang
 
+<img align="right" width="140" height="100" src="IMG_0549.JPG">
+
+Robert primarily worked on implementation and integration. This included developing the approach as to how the robot should sense and move, as well as debugging errors we encountered.
+
 ## Stephanie Ortiz-Sevilla
 
 <img align="left" width="60" height="100" src="StephanieOrtiz.JPG">
