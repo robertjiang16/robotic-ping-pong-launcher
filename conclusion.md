@@ -2,11 +2,11 @@
 
 In this section:
 
-[Discussion](Discussion)
+[Discussion](#Discussion)
 
-[Difficulties in Implementation](Difficulties in Implementation)
+[Difficulties in Implementation](#Difficulties-in-Implementation)
 
-[Improvements](Improvements)
+[Improvements](#Improvements)
 
 ## Discussion
 Discuss your results. How well did your finished solution meet your design criteria?
