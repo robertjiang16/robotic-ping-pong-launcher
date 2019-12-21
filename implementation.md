@@ -21,5 +21,13 @@ In short, our implementation can be summed up by this flowchart (blue = scanning
 
 ![Robot Implementation Flowchart](flowchart.png?raw=true)
 
+Below is also the code that our flowchart represents.
+
+![code](code.png?raw=true)
+
+And finally, our code to calculate theta_0 and theta_6 values.
+
+![theta1](theta1.png?raw=true)
+![theta2](theta2.png?raw=true)
 
 ### [Return to home](index.md)
