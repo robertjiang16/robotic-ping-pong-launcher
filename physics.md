@@ -33,3 +33,23 @@ The x- and z-axis distances were calculated using tf_echo transforms. <img src="
 ## Calculations
 
 As seen in the figure below, <img src="https://render.githubusercontent.com/render/math?math=$\theta$"> is calculated as <img src="https://render.githubusercontent.com/render/math?math=$arctan(\frac{d_y}{d_x})$">. We then move the arm to an all-zero position and rotate the base joint by theta, setting it to be positive or negative based on the sign <img src="https://render.githubusercontent.com/render/math?math=$d_x$">. 
+
+Next, we had to calculate <img src="https://render.githubusercontent.com/render/math?math=$\theta_{2}$">. Our calculations are as follows: 
+
+Let h = z_base_ee - z_base_art + L sin(θ)
+Let x = x_base_art - x_base_ee - L cos(θ)
+
+Now, when shot with velocity v, the ball spends time, t, in the air. We derived the following formula for this time using Newton’s laws: 
+
+The first term, derived using the first law of motion, is the time taken by the ball to reach its peak and return to the same height from which it was shot. The second term uses an integral version of the first law of motion to calculate the time taken to reach the ground from this height. 
+
+Our goal was to make the ball travel a distance of <img src="https://render.githubusercontent.com/render/math?math=$x$"> m in this time. As in equation, this meant that we needed a value for <img src="https://render.githubusercontent.com/render/math?math=$\theta$"> that solved the following equation: 
+
+By substituting in our known values and grinding out the algebra we arrived at the following equation: (Note: although the equation uses <img src="https://render.githubusercontent.com/render/math?math=$-v sin(\theta)$"> in the second term on the RHS, our code computed the positive value of this term since our ball was moving down, in the negative z-axis. The same applies to gravity and z-axis distance terms).
+
+Solving this equation using Scipy’s fsolve with an initial value of <img src="https://render.githubusercontent.com/render/math?math=$\frac{\pi}{4}$"> gave us at most two solutions for theta. We picked the acute angle closest to 45° for our chosen value. 
+
+Finally, we applied <img src="https://render.githubusercontent.com/render/math?math=$\theta_{1}$"> and <img src="https://render.githubusercontent.com/render/math?math=$\theta_{2}$"> to the base joint and joint 5 respectively.
+
+Another small calculation that we implemented dealt with AR tag identification instability. The AR tag would often bounce around in Rviz, causing us to aim and shoot in the wrong direction. To fix this, we took 10 readings of our lookupTransform from the arm to the AR tag and took the median value to get rid of the noisy data. Initially, 10 readings were not enough to shield us from the noise, however, reducing the sampling rate of our loop fixed the problem as the AR tag spent more time in the correct location than the incorrect one. 
+
