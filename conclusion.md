@@ -1,6 +1,6 @@
 # Conclusion
 
-In this section:
+## Navigation
 ### [Discussion](#discussion)
 ### [Difficulties in Implementation](#difficulties-in-implementation)
 ### [Improvements](#improvements)
