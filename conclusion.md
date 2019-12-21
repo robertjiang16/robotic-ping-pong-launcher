@@ -1,12 +1,9 @@
 # Conclusion
 
 In this section:
-
-[Discussion](#Discussion)
-
-[Difficulties in Implementation](#Difficulties-in-Implementation)
-
-[Improvements](#Improvements)
+[Discussion](#discussion)
+[Difficulties in Implementation](#difficulties-in-implementation)
+[Improvements](#improvements)
 
 ## Discussion
 Discuss your results. How well did your finished solution meet your design criteria?
