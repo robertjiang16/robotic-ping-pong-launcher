@@ -14,6 +14,12 @@ Our initial plan involved using a Deep RL approach using a Hierarchical Actor-Cr
 
 We experimented with a UR5 reacher environment in Mujoco using Levy’s HAC to test the feasibility of using this approach. We tested 3, 4 and 6 layer models with various horizon, penalty and test frequency parameters. The results looked good and the arm was able to learn how to accurately move to goal positions with an average success rate of over 95%. 
 
+<p align="center">
+  <img width="460" height="300" src="RL.gif">
+</p>
+
+Figure 1: Testing the UR5 reacher arm. Credit: Levy et al (https://openreview.net/pdf?id=ryzECoAcY7)
+
 However, we realized that this simulation-based approach had two major problems. Firstly, training the model to near optimality took over 8 hours. We could not afford to have such a large bottleneck in our iteration process as we needed to constantly tune our hardware alongside our software to improve the launcher’s ability to make consistent shots. Additionally, this was only the training time for the movement stage of the model and training time would more than double once we introduced trajectory calculations and other dynamics. The second problem with this approach was that our model would be training completely in a simulation environment as training a physical robot for 8 hours while manually moving the container and loading the balls was infeasible. Once the robot was trained in Mujoco, it’s performance was not guaranteed to be the same when tested on the physical robot and we would have to constantly tune parameters and introduce thresholds.
 
 ### Newtonian Approach
@@ -28,11 +34,23 @@ We first required 2 values to be able to rotate the base of the arm along the z-
 
 Next, we had to calculate the angle for the launcher. As shown in the figure below, we had to measure 6 variables to be able to determine ideal values for the “pitch angle” of the shooter. We will refer to this angle as <img src="https://render.githubusercontent.com/render/math?math=$\theta_{2}$"> and apply it to joint 5. 
 
+<p align="center">
+  <img width="460" height="300" src="Trajectory.png">
+</p>
+
+Figure 2: Trajectory diagram (side view)
+
 The x- and z-axis distances were calculated using tf_echo transforms. <img src="https://render.githubusercontent.com/render/math?math=$L$"> was calculated using the iOS measurement app and verified using a ruler. The initial velocity of the ball was calculated using a slow-motion video of the ball being shot with scale in the background for reference. We used this video to determine the distance traveled by the ball in many short time increments and averaged to get an estimated velocity. We adjusted this estimate by taking readings of the ball being shot at 45° and used the standard projectile motion equations to determine the velocity.
 
 ## Calculations
 
 As seen in the figure below, <img src="https://render.githubusercontent.com/render/math?math=$\theta$"> is calculated as <img src="https://render.githubusercontent.com/render/math?math=$arctan(\frac{d_y}{d_x})$">. We then move the arm to an all-zero position and rotate the base joint by theta, setting it to be positive or negative based on the sign <img src="https://render.githubusercontent.com/render/math?math=$d_x$">. 
+
+<p align="center">
+  <img width="460" height="300" src="SawyerCalc.jpg">
+</p>
+
+Figure 3: Determining theta 1 (top view)
 
 Next, we had to calculate <img src="https://render.githubusercontent.com/render/math?math=$\theta_{2}$">. Our calculations are as follows: 
 
@@ -41,9 +59,17 @@ Let x = x_base_art - x_base_ee - L cos(θ)
 
 Now, when shot with velocity v, the ball spends time, t, in the air. We derived the following formula for this time using Newton’s laws: 
 
+<p align="center">
+  <img width="460" height="300" src="Eqn2.gif">
+</p>
+
 The first term, derived using the first law of motion, is the time taken by the ball to reach its peak and return to the same height from which it was shot. The second term uses an integral version of the first law of motion to calculate the time taken to reach the ground from this height. 
 
 Our goal was to make the ball travel a distance of <img src="https://render.githubusercontent.com/render/math?math=$x$"> m in this time. As in equation, this meant that we needed a value for <img src="https://render.githubusercontent.com/render/math?math=$\theta$"> that solved the following equation: 
+
+<p align="center">
+  <img width="460" height="300" src="Eqn1.gif">
+</p>
 
 By substituting in our known values and grinding out the algebra we arrived at the following equation: (Note: although the equation uses <img src="https://render.githubusercontent.com/render/math?math=$-v sin(\theta)$"> in the second term on the RHS, our code computed the positive value of this term since our ball was moving down, in the negative z-axis. The same applies to gravity and z-axis distance terms).
 
