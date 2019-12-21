@@ -21,4 +21,4 @@ This project as well as its background and design elements provide many elements
 
 There are various real-world applications to our launcher, one of which is that of sports training. The world of sports training is a dynamic field which is constantly changing and being improved with new technologies and scientific advances. Our device could be used to help professional athletes with their training regimens, with the implementation of a more powerful launcher and the ability to track moving targets.
 
-[Return to home](index.md)
+### [Return to home](index.md)
