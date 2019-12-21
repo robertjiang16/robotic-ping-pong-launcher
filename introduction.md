@@ -15,11 +15,11 @@ The ultimate goal of our project was to enable a Sawyer robot to locate, aim at,
 ## Basic Apsects of Implementation
 Why is this an interesting project? What interesting problems do you need to solve to make your solution work?
 
-
+This project as well as its background and design elements provide many elements that set it apart from others and make its implementation overall more interesting. First, our project not only incorporates elements of computer science and electrical engineering, but also that of mechanical engineering and physics. Our project depends a lot on calculations and mathematics as well as structural components with the launcher and air pressurized gauge used to launch the ping pong ball.
 
 ## Applications
 In what real-world robotics applications could the work from your project be useful?
 
-
+There are various real-world applications to our launcher, one of which is that of sports training. The world of sports training is a dynamic field which is constantly changing and being improved with new technologies and scientific advances. Our device could be used to help professional athletes with their training regimens, with the implementation of a more powerful launcher and the ability to track moving targets.
 
 [Return to home](index.md)
