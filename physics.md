@@ -60,7 +60,7 @@ Let x = x_base_art - x_base_ee - L cos(θ)
 Now, when shot with velocity v, the ball spends time, t, in the air. We derived the following formula for this time using Newton’s laws: 
 
 <p align="center">
-  <img width="125" height="25" src="Eqn2.gif">
+  <img width="350" height="50" src="Eqn2.gif">
 </p>
 
 The first term, derived using the first law of motion, is the time taken by the ball to reach its peak and return to the same height from which it was shot. The second term uses an integral version of the first law of motion to calculate the time taken to reach the ground from this height. 
