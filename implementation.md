@@ -15,7 +15,7 @@ Our robot first calculates and proceeds to some theta_0 for j0 from the scanning
 
 In short, our implementation can be summed up by this flowchart (blue = scanning, yellow = trajectory calculation, red = aiming/launching):
 
-![Robot Implementation Flowchart] (https://github.com/jclay99/Robotic-Ping-Pong-Launcher/blob/master/flowchart.png)
+![Robot Implementation Flowchart] (https://github.com/jclay99/Robotic-Ping-Pong-Launcher/blob/master/flowchart.png?raw=true)
 
 
 ### [Return to home](index.md)
