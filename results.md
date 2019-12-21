@@ -6,7 +6,21 @@ Our robot overall was very effective in being able to scan for and locate the AR
 
 ## Photos
 
+![Zero Configuration](IMG_8830.jpg)
 
+Image 1: The robot in the zero configuration.
+
+![Scanning Configuration](IMG_8831.jpg)
+
+Image 2: The robot in the scanning configuration.
+
+![Launcher](IMG_8834.jpg)
+
+Image 3: The design of the ping pong ball launcher.
+
+![AR tag](IMG_8843.jpg)
+
+Image 4: The AR tag used for sensing.
 
 ## Video
 
