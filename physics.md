@@ -60,7 +60,7 @@ Let x = x_base_art - x_base_ee - L cos(θ)
 Now, when shot with velocity v, the ball spends time, t, in the air. We derived the following formula for this time using Newton’s laws: 
 
 <p align="center">
-  <img width="350" height="50" src="Eqn2.gif">
+  <img width="350" height="50" src="Screen Shot 2019-12-21 at 8.38.03 AM.png">
 </p>
 
 The first term, derived using the first law of motion, is the time taken by the ball to reach its peak and return to the same height from which it was shot. The second term uses an integral version of the first law of motion to calculate the time taken to reach the ground from this height. 
@@ -68,7 +68,7 @@ The first term, derived using the first law of motion, is the time taken by the 
 Our goal was to make the ball travel a distance of <img src="https://render.githubusercontent.com/render/math?math=$x$"> m in this time. As in equation, this meant that we needed a value for <img src="https://render.githubusercontent.com/render/math?math=$\theta$"> that solved the following equation: 
 
 <p align="center">
-  <img width="125" height="25" src="Eqn1.gif">
+  <img width="125" height="30" src="Screen Shot 2019-12-21 at 8.38.09 AM.png">
 </p>
 
 By substituting in our known values and grinding out the algebra we arrived at the following equation: (Note: although the equation uses <img src="https://render.githubusercontent.com/render/math?math=$-v sin(\theta)$"> in the second term on the RHS, our code computed the positive value of this term since our ball was moving down, in the negative z-axis. The same applies to gravity and z-axis distance terms).
