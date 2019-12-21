@@ -1,5 +1,6 @@
 # Introduction
 
+
 ## Background
 
 Inspired by previous labs involving vision and raw image generation and visualization, our group wanted to incorporate the use of a camera into our project. Our initial ideas included puzzle reconstruction using suction force, maze navigation using a marker and AR tags, and ball launching using a custom air pressurized launcher. Ultimately, our group chose to implement the ball launching mechanism using air pressure and common household materials.
