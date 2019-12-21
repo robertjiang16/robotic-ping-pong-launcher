@@ -2,7 +2,7 @@
 
 ## Yash Agarwhal
 
-<img align="left" width="60" height="90" src="Yash.jpg">
+<img align="left" width="70" height="90" src="Yash.jpg">
 
 Varun worked on modeling the physics and other equations, as well as designing and building the launcher. He also helped with implementing equations and translatng those into code.
 
@@ -10,7 +10,7 @@ Varun worked on modeling the physics and other equations, as well as designing a
 
 ## Jacob Fisher
 
-<img align="right" width="80" height="100" src="Jacob.jpg">
+<img align="right" width="75" height="100" src="Jacob.jpg">
 
 Jacob primarily focused on the design aspects of the project and the administrative aspects of the project, including making the presentation and website as well as  communicating with course staff regarding hardware and mechanical components.
 
@@ -18,7 +18,7 @@ Jacob primarily focused on the design aspects of the project and the administrat
 
 ## Varun Jhunjhunwalla
 
-<img align="left" width="80" height="100" src="Varun.jpg">
+<img align="left" width="90" height="100" src="Varun.jpg">
 
 Varun primarily worked on testing the Deep RL approach and modeling the physics and other equations. He also helped with building the launcher and implementing the equations in Python.
 
