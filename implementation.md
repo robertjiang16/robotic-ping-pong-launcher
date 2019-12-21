@@ -15,7 +15,7 @@ For trajectory calculation and aiming/launching, once the AR tag is located, we 
 Our robot first calculates and proceeds to some theta_0 for j0 from the scanning position while setting all other joint values to 0 radians - this turns the arm so it faces towards the AR tag in the XY plane relative to the base. It then performs a secondary calculation to find some theta_6 for j6 - this turns the wrist of the Sawyer so the launcher is positioned at some angle in the positive Z direction based on our trajectory equation. Using forward kinematics again to travel to theta_0 and theta_6 while all other values are 0 radians, the arm is accurately positioned to launch the ball into the cup. We simply drop the ball into the launcher now and watch it go!
 
 ![trajectory_calculation_and_aiming](trajectory_calculation_and_aiming.gif?raw=true)
-![launching](launching.gif?raw=true)
+![launching](Launching.gif?raw=true)
 
 In short, our implementation can be summed up by this flowchart (blue = scanning, yellow = trajectory calculation, red = aiming/launching):
 
