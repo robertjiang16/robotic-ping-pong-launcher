@@ -1,6 +1,6 @@
 # Introduction
 
-## Page Navigation
+## Navigation
 ### [Background](#background)
 ### [Goals](#goals)
 ### [Basic Aspects of Implementation](#basic-aspects-of-implementation)
