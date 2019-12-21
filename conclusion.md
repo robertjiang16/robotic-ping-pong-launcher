@@ -38,6 +38,10 @@ Additionally, our robot was hindered by its dependency on the AR tag attached to
 
 ### Physics
 
+Further improvements could be made to the calculations implemented in our code. The calculations performed by the system as a whole do not take into account the drag forces acting on the ping pong ball from the point that it is released from the launcher to the moment that it reaches the target container. Because these drag forces are not considered, the trajectory and ideal launch angle calculated by the system is inaccurate and would not be conducive to accurate robotic operation. Taking these extraneous forces into account when calculating the trajectory as well as possibly adding an attachment to determine the air currents that could affect the ping pong ball and factoring those into the calculations would make the device more accurate when launching.
+
+Furthermore, `[INSERT RL STUFF HERE]`
+
 ### Miscellaneous
 
 ### [Return to home](index.md)
