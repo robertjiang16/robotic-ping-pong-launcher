@@ -4,7 +4,7 @@
 What design criteria must your project meet? What is the desired functionality?
 Describe the design you chose.
 
-To take a look at the math behind our project, click the link below, which leads to our physics and calculations page.
+To take a look at the math behind our project, click the link below, which leads to our physics and calculations page:
 
 [Physics and Calculations](physics.md)
 
