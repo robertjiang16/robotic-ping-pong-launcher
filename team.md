@@ -2,11 +2,17 @@
 
 ## Yash Agarwhal
 
+<img align="left" width="60" height="90" src="Yash.jpg">
+
 ## Jacob Fisher
+
+<img align="right" width="80" height="100" src="Jacob.jpg">
 
 Jacob primarily focused on the design aspects of the project and the administrative aspects of the project, including making the presentation and website as well as  communicating with course staff regarding hardware and mechanical components.
 
 ## Varun Jhunjhunwalla
+
+<img align="left" width="80" height="100" src="Varun.jpg">
 
 Varun primarily worked on testing the Deep RL approach and modeling the physics and other equations. He also helped with building the launcher and implementing the equations in Python.
 
