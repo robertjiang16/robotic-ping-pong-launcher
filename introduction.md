@@ -13,12 +13,10 @@ Because of the imprecise nature of the air-pressurized launcher, as well as the 
 The ultimate goal of our project was to enable a Sawyer robot to locate, aim at, and launch a ping pong ball into a target container, placed a distance away from the robot. We wanted to incorporate the use of a vision tool, specifically the Sawyer right arm camera, to identify an AR tag attached to the target container, as well as calculate the ideal launch angle for the arm to launch the ping pong ball into the container.
 
 ## Basic Apsects of Implementation
-Why is this an interesting project? What interesting problems do you need to solve to make your solution work?
 
 This project as well as its background and design elements provide many elements that set it apart from others and make its implementation overall more interesting. First, our project not only incorporates elements of computer science and electrical engineering, but also that of mechanical engineering and physics. Our project depends a lot on calculations and mathematics as well as structural components with the launcher and air pressurized gauge used to launch the ping pong ball.
 
 ## Applications
-In what real-world robotics applications could the work from your project be useful?
 
 There are various real-world applications to our launcher, one of which is that of sports training. The world of sports training is a dynamic field which is constantly changing and being improved with new technologies and scientific advances. Our device could be used to help professional athletes with their training regimens, with the implementation of a more powerful launcher and the ability to track moving targets.
 
