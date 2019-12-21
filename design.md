@@ -6,7 +6,7 @@ Describe the design you chose.
 
 To take a look at the math behind our project, click the link below, which leads to our physics and calculations page.
 
-### [Physics and Calculations](physics.md)
+[Physics and Calculations](physics.md)
 
 ## Benefits and Trade-offs
 What design choices did you make when you formulated your design? What trade-offs did you have to make?
