@@ -1,7 +1,6 @@
 # Introduction
 
 ## Background
-Why is this an interesting project? What interesting problems do you need to solve to make your solution work?
 
 Inspired by previous labs involving vision and raw image generation and visualization, our group wanted to incorporate the use of a camera into our project. Our initial ideas included puzzle reconstruction using suction force, maze navigation using a marker and AR tags, and ball launching using a custom air pressurized launcher. Ultimately, our group chose to implement the ball launching mechanism using air pressure and common household materials.
 
@@ -14,6 +13,7 @@ Because of the imprecise nature of the air-pressurized launcher, as well as the 
 The ultimate goal of our project was to enable a Sawyer robot to locate, aim at, and launch a ping pong ball into a target container, placed a distance away from the robot. We wanted to incorporate the use of a vision tool, specifically the Sawyer right arm camera, to identify an AR tag attached to the target container, as well as calculate the ideal launch angle for the arm to launch the ping pong ball into the container.
 
 ## Basic Apsects of Implementation
+Why is this an interesting project? What interesting problems do you need to solve to make your solution work?
 
 
 
