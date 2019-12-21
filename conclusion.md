@@ -10,17 +10,19 @@ Discuss your results. How well did your finished solution meet your design crite
 
 ## Difficulties in Implementation
 
-The difficulties that we encountered can be separated into three distinct categories: hardware and building, physics and calculations, and code implementation.
+The difficulties that we encountered can be separated into two distinct categories: hardware/mechanics and physics/calculations.
 
 ### Hardware and Mechanics
 
 Our project was not only an in-depth look at physics and code, but also an introduction to the world of mechanical engineering. The robot incorporated a launcher system as well as an air-pressurized gauge, and we learned very quickly about potential inaccuracies and inconsistencies that occur in mechanical engineering endeavors.
 
-One of the first difficulties we encountered in our implementation was the inconsistency in the air pressure dispersed from the air pressure gauge. Because the air released from the tube varies based on the size of the tube, the amount of rotation on the release gauge, and the air pressure present in the containment tanks, the release velocity of the ping pong ball would greatly vary across each trial performed.
+The first challenge we encountered was in the reliability of our launcher. We did not have the tools necessary to control the air pressure dispensed into it. We also had no good way to measure our initial velocity. Overall, much of the difficulty came as a consequence to our lack of experience and familiarity with the Sawyer. For instance, we struggled to obtain a clear reading for the coordinates of the AR marker attached to our target. After days of trying to fix the problem we realized by accident that using the right hand camera instead of the head camera got rid of the problem entirely.
 
 ### Physics and Calculations
 
-### Code Implementation
+Calculating the physics at the core of our project was much less straightforward than anticipated. There was some confusion in using the correct transforms and observed variables to insert into the formulas as well as in finding the formulas themselves. For more information on some of the calculation-based difficulties experienced in our project, take a look at [Physics and Calculations](physics.md).
+
+In the end, while the challenges we faced delayed our progress immensely, each served as a great opportunity to learn.
 
 ## Improvements
 Does your solution have any flaws or hacks? What improvements would you make if you had additional time?
